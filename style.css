@@ -194,4 +194,58 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Forces the image to fill the screen without stretching */
+
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #050505;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30000;
+}
+
+.modal-content {
+    border: 1px solid #B90000; /* Sexy Red */
+    padding: 50px;
+    background: rgba(5, 5, 5, 0.9);
+    text-align: center;
+    box-shadow: 0 0 40px rgba(185, 0, 0, 0.3);
+}
+
+.glow-yellow {
+    color: #FFD700; /* Electric Yellow */
+    text-shadow: 0 0 20px #FFD700;
+    font-size: 2.5rem;
+}
+
+.funny-warning {
+    margin: 20px 0;
+    color: #B90000;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.modern-btn {
+    background: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    padding: 15px 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.modern-btn:hover {
+    background: #FFD700;
+    color: #050505;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #FFD700;
 }
