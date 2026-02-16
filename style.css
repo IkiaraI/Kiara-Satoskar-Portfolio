@@ -1,0 +1,197 @@
+/* --- Global Resets --- */
+:root {
+  --bg-dark: #050505;        /* Deep obsidian black */
+  --sexy-red: #B90000;       /* The "Night Has Come" crimson */
+  --electric-yellow: #FFD700; /* A "Golden" yellow like the Starboy title */
+  --pure-white: #FFFFFF;     /* For body text readability */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    color: white;
+    background-color: #050505;
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(185, 0, 0, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(185, 0, 0, 0.1) 0%, transparent 40%);
+    background-attachment: fixed;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* --- The "Glassmorphism" Card Effect --- */
+.glass-card {
+    background: rgba(15, 15, 15, 0.6); /* Darker glass to match the red vibe */
+    backdrop-filter: blur(25px) saturate(150%);
+    -webkit-backdrop-filter: blur(25px) saturate(150%);
+    border: 1px solid rgba(185, 0, 0, 0.3); /* Thin red border */
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5), 
+                inset 0 0 20px rgba(185, 0, 0, 0.1); /* Subtle inner red glow */
+}
+
+/* --- Hero Section --- */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+    
+    margin-bottom: 1rem;
+}
+
+.glow-text {
+    color: #ff1911; /* A bright blue */
+    text-shadow: 0 0 15px rgba(168, 19, 19, 0.6); /* The glow effect */
+}
+
+.hero p { font-size: 1.25rem; color: #cccccc; margin-bottom: 2rem; }
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #930606;
+    border: 1px solid #a11c1c;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #000000;
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    box-shadow: 0 0 20px #d5b60a; /* Glow on hover */
+}
+
+/* --- Projects Grid --- */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem;
+}
+
+.project-card h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+.project-card p { color: #cccccc; margin-bottom: 1.5rem; }
+
+.tags span {
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin-right: 0.5rem;
+    color: #a3a3a3;
+}
+
+/* --- Skills Grid --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.skill-card {
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    border-color: #FFD700;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.social-links a {
+    margin: 0 1rem;
+    color: #a3a3a3;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover { color: #FFD700; }
+
+
+.signature {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 5rem;
+    color: #930606; /* The vibrant red from your inspo photos */
+    text-shadow: 0 0 8px rgba(52, 41, 255, 0.4); /* Subtle red glow */
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#hacker-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 5rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -2px; /* Tighter look like the Starboy text */
+    /* Intense Red Glow 
+    text-shadow: 0 0 10px #B90000, 
+                 0 0 30px #B90000, 
+                 0 0 60px rgba(185, 0, 0, 0.5);*/
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#hacker-text:hover {
+    color: #FFD700;
+    text-shadow: 0 0 20px #ba9e00, 0 0 50px #ffd903;
+    transform: scale(1.05); /* Slight "pop" on hover */
+}
+
+#jumpscare-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000; /* Keeps it above your "Hacker" name and cards */
+    display: none; /* Hidden by default */
+    background-color: #000; /* Black background in case image aspect ratio varies */
+}
+
+#jumpscare-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Forces the image to fill the screen without stretching */
+}
