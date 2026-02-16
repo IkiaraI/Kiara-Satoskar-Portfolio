@@ -48,14 +48,16 @@ function triggerJumpScare() {
 }
 
 /* --- THE INITIALIZER (Run everything on load) --- */
-window.onload = () => {
-    // 1. Start the name scramble immediately
-    startScramble();
+const enterBtn = document.getElementById('enter-btn');
+const modal = document.getElementById('welcome-modal');
 
-    // 2. Set a  timer for papi
-    setTimeout(triggerJumpScare, 5000);
-};
-
-// Also trigger scramble on hover
-
-target.onmouseover = startScramble;
+enterBtn.addEventListener('click', () => {
+    // 1. Hide the modal
+    modal.style.display = 'none';
+    
+    // 2. Start the hacker name scramble
+    startScramble();
+    
+    // 3. Optional: Play a quick 'blip' or 'glitch' sound to confirm audio works
+    console.log("Papi has entered the building. Audio unlocked.");
+});
