@@ -52,10 +52,10 @@ window.onload = () => {
     // 1. Start the name scramble immediately
     startScramble();
 
-    // 2. Set a random timer for the jumpscare (between 5-15 seconds)
-    const randomTime = Math.floor(Math.random() * (15000 - 5000 + 1)) + 5000;
-    setTimeout(triggerJumpScare, randomTime);
+    // 2. Set a  timer for papi
+    setTimeout(triggerJumpScare, 5000);
 };
 
 // Also trigger scramble on hover
+
 target.onmouseover = startScramble;
