@@ -1,9 +1,8 @@
-/* --- Global Resets --- */
 :root {
-  --bg-dark: #050505;        /* Deep obsidian black */
-  --sexy-red: #B90000;       /* The "Night Has Come" crimson */
-  --electric-yellow: #FFD700; /* A "Golden" yellow like the Starboy title */
-  --pure-white: #FFFFFF;     /* For body text readability */
+  --bg-dark: #050505;        
+  --sexy-red: #B90000;     
+  --electric-yellow: #FFD700; 
+  --pure-white: #FFFFFF;     
 }
 
 * {
@@ -39,19 +38,18 @@ a { text-decoration: none; color: inherit; }
     text-align: center;
 }
 
-/* --- The "Glassmorphism" Card Effect --- */
+
 .glass-card {
-    background: rgba(15, 15, 15, 0.6); /* Darker glass to match the red vibe */
+    background: rgba(15, 15, 15, 0.6); 
     backdrop-filter: blur(25px) saturate(150%);
     -webkit-backdrop-filter: blur(25px) saturate(150%);
-    border: 1px solid rgba(185, 0, 0, 0.3); /* Thin red border */
+    border: 1px solid rgba(185, 0, 0, 0.3); 
     border-radius: 20px;
     padding: 3rem;
     box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5), 
-                inset 0 0 20px rgba(185, 0, 0, 0.1); /* Subtle inner red glow */
-}
+                inset 0 0 20px rgba(185, 0, 0, 0.1); 
 
-/* --- Hero Section --- */
+
 .hero {
     height: 80vh;
     display: flex;
@@ -70,8 +68,8 @@ a { text-decoration: none; color: inherit; }
 }
 
 .glow-text {
-    color: #ff1911; /* A bright blue */
-    text-shadow: 0 0 15px rgba(168, 19, 19, 0.6); /* The glow effect */
+    color: #ff1911; 
+    text-shadow: 0 0 15px rgba(168, 19, 19, 0.6);
 }
 
 .hero p { font-size: 1.25rem; color: #cccccc; margin-bottom: 2rem; }
@@ -91,13 +89,13 @@ a { text-decoration: none; color: inherit; }
     background-color: #000000;
     border: 1px solid #FFD700;
     color: #FFD700;
-    box-shadow: 0 0 20px #d5b60a; /* Glow on hover */
+    box-shadow: 0 0 20px #d5b60a; 
 }
 
 /* --- Projects Grid --- */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -128,7 +126,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .skill-card:hover {
-    transform: translateY(-5px); /* Subtle lift on hover */
+    transform: translateY(-5px); 
     border-color: #FFD700;
 }
 
@@ -153,7 +151,7 @@ footer {
     font-family: 'Inter', sans-serif;
     font-weight: 100;
     font-size: 5rem;
-    color: #930606; /* The vibrant red from your inspo photos */
+    color: #930606;
     text-shadow: 0 0 8px rgba(52, 41, 255, 0.4); /* Subtle red glow */
     display: inline-block;
     padding: 0 10px;
@@ -165,7 +163,7 @@ footer {
     font-size: 5rem;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: -2px; /* Tighter look like the Starboy text */
+    letter-spacing: -2px;
     /* Intense Red Glow 
     text-shadow: 0 0 10px #B90000, 
                  0 0 30px #B90000, 
@@ -185,15 +183,15 @@ footer {
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: 10000; /* Keeps it above your "Hacker" name and cards */
+    z-index: 10000; 
     display: none; /* Hidden by default */
-    background-color: #000; /* Black background in case image aspect ratio varies */
+    background-color: #000; 
 }
 
 #jumpscare-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Forces the image to fill the screen without stretching */
+    object-fit: cover; 
 
 }
 
@@ -211,7 +209,7 @@ footer {
 }
 
 .modal-content {
-    border: 1px solid #B90000; /* Sexy Red */
+    border: 1px solid #B90000;
     padding: 50px;
     background: rgba(5, 5, 5, 0.9);
     text-align: center;
@@ -219,7 +217,7 @@ footer {
 }
 
 .glow-yellow {
-    color: #FFD700; /* Electric Yellow */
+    color: #FFD700; 
     text-shadow: 0 0 20px #FFD700;
     font-size: 2.5rem;
 }
@@ -249,3 +247,4 @@ footer {
     transform: scale(1.1);
     box-shadow: 0 0 20px #FFD700;
 }
+
